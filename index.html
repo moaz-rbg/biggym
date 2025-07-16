@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Predator gym</title>
+    <!-- Main Template CSS File -->
+    <link rel="stylesheet" href="test.css" />
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/all.min.css" />
+    <!--Script File-->
+    <script defer src="java.js"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&#038;display=swap"
+      rel="stylesheet"
+    />
+  </head>
+ 
+
+  <body>
+
+    <!-- Start Header -->
+<script>
+$(document).ready(function(){
+  $(".icon").click(function(){
+    $("ul").show();
+  });
+  //  $(".icon").dblclick(function(){
+  //   $("ul").hide();
+  //  });
+  $(".header").mouseleave(function(){
+    $("ul").hide();
+  });
+});
+
+</script>
+
+    <div class="header">
+      <div class="container">
+
+        <img decoding="async" style="border-radius: 50%; width: 100px; height: 100px;" class="logo" src="images/cover.png" alt="" />
+        <div class="links">
+          <span class="icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+          <ul>
+            <li><a href="#landing">Home</a></li>
+            <li><a href="#Packages">Packages</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- End Header -->
+    <!-- Start Landing Section -->
+    <div id="landing" class="landing">
+      <div class="intro-text">
+         <!-- <img style="margin-left: -90px; margin-top: -100px;" src="images/predator_logo-removebg-preview (1).png">  -->
+
+          <!-- <h2 class="section-title">Gym Photos</h2> -->
+    <div class="gallery-wrapper">
+      <div class="gallery-image-wrapper">
+        <img src="images/Futuristic sci-fi style background. Adorable, charming, cute character design with advanced technology space elements.  Deep yellow gradient to black, abstract sharp shapes like lion claws3.jpg" alt="Gym Photo 1" class="gallery-image">
+        <img src="images/ga1.jpg" alt="Gym Photo 2" class="gallery-image">
+        <img src="images/ga2.jpg" alt="Gym Photo 3" class="gallery-image">
+        <img src="images/ga3.jpg" alt="Gym Photo 3" class="gallery-image">
+        <img src="images/ga4.jpg" alt="Gym Photo 3" class="gallery-image">
+        <img src="images/ga.jpg" alt="Gym Photo 3" class="gallery-image">
+      </div>
+      <div class="gallery-arrow left">&#10094;</div>
+      <div class="gallery-arrow right">&#10095;</div>
+    </div>
+  </section>
+
+<br>
+<h3 style="color: white;">Big Gym</h3>
+         <h4 style="color: white;">We Make Heroes</h4>
+        <!-- <p>We are Leon - Super Creative & Minimal Agency Web Template</p> -->
+        
+        
+      </div>
+    </div>
+    <!-- End Landing Section -->
+   
+        
+    <!-- Start Portfolio -->
+     <!-- <script>
+
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+     </script> -->
+
+
+<script>
+  const track = document.getElementById("customSliderTrack");
+  const leftBtn = document.querySelector(".custom-arrow-left");
+  const rightBtn = document.querySelector(".custom-arrow-right");
+
+  let scrollAmount = 0;
+
+  function calculateScroll() {
+    const card = track.querySelector(".custom-card");
+    if (!card) return;
+    const gap = parseInt(window.getComputedStyle(track).columnGap || 16);
+    scrollAmount = window.innerWidth <= 600
+      ? track.offsetWidth
+      : card.offsetWidth + gap;
+    updateArrowVisibility();
+  }
+
+  function updateArrowVisibility() {
+    const maxScroll = track.scrollWidth - track.clientWidth;
+    leftBtn.style.display = track.scrollLeft > 0 ? 'block' : 'none';
+    rightBtn.style.display = track.scrollLeft < maxScroll ? 'block' : 'none';
+  }
+
+  leftBtn.addEventListener("click", () => {
+    track.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+  });
+
+  rightBtn.addEventListener("click", () => {
+    track.scrollBy({ left: scrollAmount, behavior: "smooth" });
+  });
+
+  track.addEventListener("scroll", updateArrowVisibility);
+  window.addEventListener("resize", calculateScroll);
+
+  calculateScroll();
+</script>
+
+<hr align="center" style="width: 50%;
+border-color: var(--main-color);
+" />
+<br>
+<br>
+<br>
+<section class="Packages" id="Packages">
+  <h2 style="color: #f3eaea;" class="special-heading">Packages</h2>
+  <h4 style="color: silver; text-align: center;">Big Gym Your way to success</h4>
+<div class="custom-slider-container">
+  <button class="custom-arrow custom-arrow-left">&#8592;</button>
+
+  <div class="custom-slider-track" id="customSliderTrack">
+    
+    <!-- Card 1 -->
+    <div class="custom-card">
+      <div class="imgBox">
+        <img width="300px" src="images/Untitled-3.png" alt="mouse corsair" class="mouse" />
+      </div>
+      <div class="contentBox">
+        <h3>12 Sessions</h3>
+        <h2 class="price">200 <small>EG</small> </h2>
+      <!-- <a style="position: absolute;" href="#" class="buy">Subscribe</a>  -->
+      </div>
+    </div>
+
+    <!-- Duplicate the card for more products -->
+    <div class="custom-card">
+      <div class="imgBox">
+        <img src="images/Untitled-4.png" alt="mouse corsair" class="mouse" />
+      </div>
+      <div class="contentBox">
+        <h3>16 Sessions</h3>
+        <h2 class="price">300 <small>EG</small> </h2>
+        <a href="#" class="buy">Buy Now</a>
+      </div>
+    </div>
+    <div class="custom-card">
+      <div class="imgBox">
+        <img src="images/Untitled-5.png" alt="mouse corsair" class="mouse" />
+      </div>
+      <div class="contentBox">
+        <h3>30 Sessions</h3>
+        <h2 class="price">550 <small>EG</small> </h2>
+        <a href="#" class="buy">Buy Now</a>
+      </div>
+    </div>
+    <div class="custom-card">
+      <div class="imgBox">
+        <img src="images/Untitled-6.png" alt="mouse corsair" class="mouse" />
+      </div>
+      <div class="contentBox">
+        <h3>3 Months</h3>
+        <h2 class="price">850<small>EG</small> </h2>
+        <a href="#" class="buy">Buy Now</a>
+      </div>
+    </div>
+    <div class="custom-card">
+      <div class="imgBox">
+        <img src="images/Untitled-3.png" alt="mouse corsair" class="mouse" />
+      </div>
+      <div class="contentBox">
+        <h3>Mouse Corsair K70</h3>
+        <h2 class="price">79.<small>99</small> €</h2>
+        <a href="#" class="buy">Buy Now</a>
+      </div>
+    </div>
+    <div class="custom-card">
+      <div class="imgBox">
+        <img src="images/mouse2.png" alt="mouse corsair" class="mouse" />
+      </div>
+      <div class="contentBox">
+        <h3>Mouse Corsair K70</h3>
+        <h2 class="price">79.<small>99</small> €</h2>
+        <a href="#" class="buy">Buy Now</a>
+      </div>
+    </div>
+    <div class="custom-card">
+      <div class="imgBox">
+        <img src="images/mouse2.png" alt="mouse corsair" class="mouse" />
+      </div>
+      <div class="contentBox">
+        <h3>Mouse Corsair K70</h3>
+        <h2 class="price">79.<small>99</small> €</h2>
+        <a href="#" class="buy">Buy Now</a>
+      </div>
+    </div>
+    <div class="custom-card">
+      <div class="imgBox">
+        <img src="images/mouse2.png" alt="mouse corsair" class="mouse" />
+      </div>
+      <div class="contentBox">
+        <h3>Mouse Corsair K70</h3>
+        <h2 class="price">79.<small>99</small> €</h2>
+        <a href="#" class="buy">Buy Now</a>
+      </div>
+    </div>
+    <div class="custom-card">
+      <div class="imgBox">
+        <img src="images/mouse2.png" alt="mouse corsair" class="mouse" />
+      </div>
+      <div class="contentBox">
+        <h3>Mouse Corsair K70</h3>
+        <h2 class="price">79.<small>99</small> €</h2>
+        <a href="#" class="buy">Buy Now</a>
+      </div>
+    </div>
+    <div class="custom-card">
+      <div class="imgBox">
+        <img src="images/mouse2.png" alt="mouse corsair" class="mouse" />
+      </div>
+      <div class="contentBox">
+        <h3>Mouse Corsair K70</h3>
+        <h2 class="price">79.<small>99</small> €</h2>
+        <a href="#" class="buy">Buy Now</a>
+      </div>
+    </div>
+    <div class="custom-card">
+      <div class="imgBox">
+        <img src="images/mouse2.png" alt="mouse corsair" class="mouse" />
+      </div>
+      <div class="contentBox">
+        <h3>Mouse Corsair K70</h3>
+        <h2 class="price">79.<small>99</small> €</h2>
+        <a href="#" class="buy">Buy Now</a>
+      </div>
+    </div>
+    <div class="custom-card">
+      <div class="imgBox">
+        <img src="images/mouse2.png" alt="mouse corsair" class="mouse" />
+      </div>
+      <div class="contentBox">
+        <h3>Mouse Corsair K70</h3>
+        <h2 class="price">79.<small>99</small> €</h2>
+        <a href="#" class="buy">Buy Now</a>
+      </div>
+    </div>
+    <div class="custom-card">
+      <div class="imgBox">
+        <img src="images/mouse2.png" alt="mouse corsair" class="mouse" />
+      </div>
+      <div class="contentBox">
+        <h3>Mouse Corsair K70</h3>
+        <h2 class="price">79.<small>99</small> €</h2>
+        <a href="#" class="buy">Buy Now</a>
+      </div>
+    </div>
+    <!-- Add more cards here -->
+
+  </div>
+
+  <button class="custom-arrow custom-arrow-right">&#8594;</button>
+</div>
+</section>
+
+<!-- <div class="card">
+
+  <div class="imgBox">
+    <img src="" alt="mouse corsair" class="mouse">
+  </div>
+
+  <div class="contentBox">
+    <h3>Mouse Corsair M65</h3>
+    <h2 class="price">61.<small>98</small> €</h2>
+    <a href="#" class="buy">Buy Now</a>
+  </div>
+
+</div> -->
+
+    <!-- <div class="portfolio" id="portfolio">
+      <div class="container">
+        <h2 class="special-heading">Best Classes</h2>
+        <p>If you do it right, it will last forever.</p>
+        <div class="portfolio-content">
+          <div class="card">
+            <img decoding="async" src="images/KICKOXING123.jpg" alt="" />
+            <div class="info">
+              <h3 style="color: #f3eaea;">Boxing & KickBoxing</h3>
+              <p style="color: #f3eaea;">أهم ١٠ أسباب هتخليك ماتفوتش كلاس الــ كيك بوكسنج 🥊
+
+                . هيساعدك علي حرق الدهون و فقدان الوزن
+               
+                . هيساعدك في تغيير شكل الجسم وبناء كتلة العضلات 
+                <span id="dots">...</span><span id="more">
+                . تفريغ شحنة الغضب والطاقة السلبية و التخلص من الإجهاد والقلق 
+
+                . هيساعدك في الدفاع عن نفسك والاحساس بالأمان
+
+                . تقوية عضله القلب وضخ الدم بشكل صحي وسليم
+
+                . هيزود ثقتك بنفسك و الاتزان الانفعالي
+
+                . أسلوب تمرين ممتع ومليان تحدي ومنافسة
+
+                . بيزود من طاقتك ونشاطك وبيساعد الجسم علي افراز هرمون السعادة 
+
+                . هيحافظ علي توازن جسمك و اتزانه 
+
+                . من قدرة عضلاتك علي التحمل 
+                
+                  تقدر تتمرن كيك بوكسنج مع اقوى المدربين في بريداتور جيم
+                  ابعتلنا رسالة دلوقتي واعرف التفاصيل😉🔥
+
+
+                و نتشرف بزيارتك لينا فـ بريداتور جيم و تشوف صالة الـتدريب وتسأل الكوتش عن كل استفساراتك😍
+                📌عنواننا مميز جدا طنطا - شارع الأشرف برج الصَّقر بجوار فتح الله الجديد
+                </span></p>
+                
+                <button onclick="myFunction()" id="myBtn">Read more</button>
+            </div>
+
+
+          </div>
+          <div class="card">
+            <img decoding="async" src="images/claistins.jpg" alt="" />
+            <div class="info">
+              <h3 style="color: #f3eaea;">Calisthenics</h3>
+              <p style="color: #f3eaea;">اتمرنت كاليستنكس قبل كدة ؟
+
+                تمارين الكاليستنكس ليها أشكال كتير جدا وبتتعمل بوزن الجسم بس وتقدر تعمل بيها فورمة قوية من غير ما تحتاج أي أوزان!
+                
+                تقدر تبدأ كاليستنكس في بريداتور جيم وتعزز قدراتك العضلية 💪
+                وكمان شكل جسمك هيكون رياضي وتبني عضلات قوية 😉
+                
+                عشان تعرف تفاصيل اكتر عن الكاليستنكس 
+                سيبلنا كومنت وهنبعتلك التفاصيل 📩
+                
+                والاستفسار كلمنا : 
+                اتصال :  0403292596
+                واتس اب : 01016162853
+                او 📩 التواصل معنا عبر رسائل الصفحة.
+                و نتشرف بزيارتك لينا فـ بريداتور جيم تشوف صالة الـتدريب وتسأل الكوتش عن كل استفساراتك😍
+                📌عنواننا مميز جدا طنطا - شارع الأشرف برج الصَّقر بجوار فتح الله الجديد
+                </p>
+                
+            </div>
+          </div>
+          <div class="card">
+            <img decoding="async" src="images/proto3.webp" alt="" />
+            <div class="info">
+              <h3 style="color: #f3eaea;">Gym</h3>
+              <p style="color: #f3eaea;">خطة الصيف السنة دي مش ناقصها غير الجيم 😉
+                الفورمة يادوب تلحقها دلوقتي مع جيم مميز فى طنطــا 
+                بريداتور جيم 💪
+                عندنا كل المميزات اللي ممكن تحتاجها في الجيم 🥰
+                
+                ▪Our facilities include Best Trainers Team with high experience & Certification
+                ▪Physiotherapy & Rehabilitation Clinic
+                ▪Panatta devices and equipment are close to the whole picture
+                ▪Daily Classes ( core, zumba, Abs, tabata,circuit )
+                
+                تواصل معانا دلوقتي وهنبعتلك كل التفاصيل 📩
+                
+                و نتشرف بزيارتك لينا فـ بريداتور جيم تشوف صالة الـ تونينج والحديد وتسأل الكوتش عن كل استفساراتك😍
+                
+                📌عنواننا مميز جدا طنطا - شارع الأشرف برج الصَّقر (بجوار فتح الله الجديد)
+                </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img decoding="async" src="images/proto3.webp" alt="" />
+            <div class="info">
+              <h3 style="color: #f3eaea;">Gym</h3>
+              <p style="color: #f3eaea;">خطة الصيف السنة دي مش ناقصها غير الجيم 😉
+                الفورمة يادوب تلحقها دلوقتي مع جيم مميز فى طنطــا 
+                بريداتور جيم 💪
+                عندنا كل المميزات اللي ممكن تحتاجها في الجيم 🥰
+                
+                ▪Our facilities include Best Trainers Team with high experience & Certification
+                ▪Physiotherapy & Rehabilitation Clinic
+                ▪Panatta devices and equipment are close to the whole picture
+                ▪Daily Classes ( core, zumba, Abs, tabata,circuit )
+                
+                تواصل معانا دلوقتي وهنبعتلك كل التفاصيل 📩
+                
+                و نتشرف بزيارتك لينا فـ بريداتور جيم تشوف صالة الـ تونينج والحديد وتسأل الكوتش عن كل استفساراتك😍
+                
+                 📌عنواننا مميز جدا طنطا - شارع الأشرف برج الصَّقر (بجوار فتح الله الجديد)  -->
+                <!-- </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div> -->
+
+    <!-- End Portfolio -->
+    <!-- Start About -->
+<br>
+<h5 style="color: white; text-align: center;">Scroll Me</h5>
+<br>
+<br>
+
+    <hr align="center" style="width: 50%;
+border-color: var(--main-color);
+" />
+<br>
+<br>
+
+    <div class="about" id="about">
+      <div class="container">
+        <h2 style="color: #f3eaea;" class="special-heading">About</h2>
+        <h4 style="color: silver; text-align: center;">Big Gym Your way to success</h4>
+        <div class="about-content">
+          <div class="image">
+            <img style="height: 300px;" decoding="async" src="images/about.jpg" alt="" />
+          </div>
+          <div class="text">
+            <p style="color: #f3eaea;">
+              كام مره وقعت وافتكرت ان هدفك مستحيل توصل له ؟؟
+             في بريداتور جيم اتجمعنا علي هدف واحد مش هنتنازل عنه!! ⌛
+              
+             هنوصلك لهدفك بكل الطرق وبأشتراك واحد بس شااااامل كل الخدمات 😉
+              لو حابب تعرف تفاصيل أكتر ابعتلنا علي رسايل الصفحة 🥰🔥
+              أو كلمنا علي رقم 0403292596 وللإستفسار واتس آب علي 01016162853
+            </p>
+            <hr />
+            <p style="color: #f3eaea;">
+              و نتشرف بزيارتك لينا فـ بريداتور جيم و تشوف صالة الـتدريب وتسأل الكوتش عن كل استفساراتك😍
+              📌عنواننا مميز جدا طنطا - شارع الأشرف برج الصَّقر بجوار فتح الله الجديد
+              
+            </p>
+          </div>
+        </div>
+      </div>
+    </div> 
+    <!-- End About -->
+    <!-- Start Contact -->
+    <div class="contact" id="contact">
+      <div class="container">
+        <h2 class="special-heading">Contact</h2>
+        <!-- <p>We are born to create</p> -->
+        <div class="info">
+          <p style="color: black;" class="label">Feel free to contact us a line at:</p>
+          <a href="tel:+201050037495" class="link">+201050037495</a>
+          <div class="social">
+            Find Us On Social Networks
+            <a href="https://www.instagram.com/big_gym_tanta?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i style="color: goldenrod;" class="fa-brands fa-instagram"></i></a>
+           <a href="https://www.facebook.com/biggym.tanta/?locale=ar_AR"><i style="color: goldenrod;" class="fab fa-facebook-f"></i></a> 
+            <a href="https://maps.app.goo.gl/exfFJcRVCWqDs7mKA"><i style="color: goldenrod;" class="fa-solid fa-location-dot"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Contact -->
+    <!-- Start Footer -->
+    <div class="footer">&copy; 2025 <a style="text-decoration: none;" href="tel:+201061142878"><span>Big Gym</span></a> All Right Reserved</div>
+    <!-- End Footer -->
+  </body>
+<script>
+
+  // Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyBumMI3e8yruFswNiqiZOO9nEZTe_A9zCk",
+  authDomain: "predator-gym.firebaseapp.com",
+  projectId: "predator-gym",
+  storageBucket: "predator-gym.appspot.com",
+  messagingSenderId: "412491329601",
+  appId: "1:412491329601:web:fe085579b78bf71540d6c0",
+  measurementId: "G-3X3ELNPJNC"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+</script>
+
+     </html>
